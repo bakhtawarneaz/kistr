@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to KISTR Login</title>
+    <link rel="icon" href="assets/images/fav-icon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/custom.css" />
+</head>
+
+<body>
+
+    <div class="site-wraper">
+        <aside class="site-sidbar">
+            <header class="sidbar-head">
+                <img onclick="javascript:location.href='index.html'" src="assets/images/kistr-logo-white.svg"
+                    alt="KISTR Logo" />
+            </header>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li>
+                        <a href="">
+                            <span class="menu-icon"><img src="assets/images/m1.png" alt=""></span>
+                            Dashboard</a>
+                    </li>
+                    <li><a href=""><span class="menu-icon"><img src="assets/images/m2.png" alt=""></span> Inbox</a></li>
+                    <li><a href=""><span class="menu-icon"><img src="assets/images/m3.png" alt=""></span> Employees</a>
+                        <button class="dd-nav-btn"><span class="icon-img"><img src="assets/images/chevron-down.png"
+                                    alt=""></span></button>
+                        <ul>
+                            <li><a href="">Overview</a></li>
+                            <li><a href="">Communication</a></li>
+                            <li><a href="">Absences</a></li>
+                            <li><a href="">Compensation</a></li>
+                            <li><a href="">Payroll</a></li>
+                            <li><a href="">Performance</a></li>
+                            <li><a href="">Training</a></li>
+                            <li><a href="">Surveys</a></li>
+                            <li><a href="">Whistleblowing</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href=""><span class="menu-icon"><img src="assets/images/m3.png" alt=""></span> Recruiting</a>
+                        <button class="dd-nav-btn"><span class="icon-img"><img src="assets/images/chevron-down.png"
+                                    alt=""></span></button>
+                    </li>
+                    <li><a href=""><span class="menu-icon"><img src="assets/images/m4.png" alt=""></span> Calendar</a>
+                    </li>
+
+                    <li><a href=""><span class="menu-icon"><img src="assets/images/m5.png" alt=""></span> Reporting</a>
+                    </li>
+                    <li><a href=""><span class="menu-icon"><img src="assets/images/m6.png" alt=""></span>
+                            Automations</a></li>
+                    <li><a href=""><span class="menu-icon"><img src="assets/images/m9.png" alt=""></span> Support</a>
+                    </li>
+                    <li><a href=""><span class="menu-icon"><img src="assets/images/m8.png" alt=""></span>
+                            Marketplace</a></li>
+                </ul>
+            </nav>
+            <footer class="sidebar-footer">
+                <button class="sidebar-close-btn"><span class="menu-icon"><img src="assets/images/angle-double.png"
+                            alt=""></span></button>
+            </footer>
+        </aside>
+        <main class="site-main">
+            <header class="main-header">
+                <div class="search-widget-top">
+                    <div class="input-wrap input-placeholder-light">
+                        <button class="input-icon">
+                            <span class="icon-img"><img src="assets/images/search-lg.png" alt=""></span></button>
+                        <input type="search" class="input-elm" name="" id="" placeholder="Search" />
+                    </div>
+                </div>
+                <div class="header-right-elms">
+                    <div class="search-elm right-elm-icon">
+                        <button><span class="icon-img"><img src="assets/images/search-lg.png" alt=""></span></button>
+                    </div>
+                    <div class="setting-elm right-elm-icon">
+                        <button><span class="icon-img"><img src="assets/images/settings-01.png" alt=""></span></button>
+                    </div>
+                    <div class="bell-elm right-elm-icon">
+                        <button><span class="icon-img"><img src="assets/images/bell-01.png" alt=""></span></button>
+                    </div>
+                    <div class="user-elm right-elm-icon">
+                        <button><img src="assets/images/user-img.png" alt="" /></button>
+                    </div>
+                </div>
+            </header>
+
+            <div class="main-body">
+                <div class="site-breadcrumb">
+                    <ul>
+                        <li><a href="">Employees</a></li>
+                        <li>Overview</li>
+                    </ul>
+                </div>
+                <div class="page-title-widget">
+                    <h1>Orgchart <span class="emp-count">20</span></h1>
+                </div>
+                <hr />
+                <div class="filter-widget">
+                    <button class="site-btn filter-btn">
+                        <span class="icon-img"><img src="assets/images/filter-2.png" alt=""></span> Filter</button>
+                    <div class="input-wrap filter-widget-search">
+                        <button class="input-icon"><span class="icon-img"><img src="assets/images/search-lg-gray.png"
+                                    alt=""></span></button>
+                        <input type="search" class="input-elm"
+                            placeholder="Type in Name, Function or other attributes to start searching...">
+                    </div>
+                </div>
+                <div class="site-tbl-widget tab-nav-widget">
+                    <div class="tbl-nav">
+                        <ul>
+                            <li><a href="dashboard.html">List view</a></li>
+                            <li><a class="active" href="javscript:void(0)">Orgchart</a></li>
+                            <li><a href="dashboard-file.html">Files</a></li>
+                        </ul>
+                        <button class="site-btn btn-secondery" onclick="javascript:location.href='modal.html'">
+                            <span class="icon-img"><img src="assets/images/plus.png" alt=""></span> Add
+                            employee</button>
+                    </div>
+                </div>
+                <div class="org-chart">
+                    <div id="chart_div"></div>
+                </div>
+            </div>
+
+
+        </main>
+    </div>
+
+
+
+
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', { packages: ["orgchart"] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var data = new google.visualization.DataTable();
+            data.addColumn('string', 'Name');
+            data.addColumn('string', 'Manager');
+            data.addColumn('string', 'ToolTip');
+
+            // For each orgchart box, provide the name, manager, and tooltip to show.
+            data.addRows([
+                [
+                    {
+                        'v': 'Olivia Rhye',
+                        'f': '<div class="org-wrap"><img src="assets/images/org-img.png" /><span class="s1">Olivia</span> <span class="s1">Rhye CEO</span></div>'
+                    },
+                    '', 'CEO'
+                ],
+
+                [
+                    {
+                        'v': 'Phoenix Baker',
+                        'f': '<div class="org-wrap"><img src="assets/images/org-2.png" /><span class="s1">Phoenix Baker</span> <span class="s1">Head of Tech</span></div>'
+                    },
+                    'Olivia Rhye', ''
+                ],
+                [
+                    {
+                        'v': 'Lana Steiner',
+                        'f': '<div class="org-wrap"><img src="assets/images/org-3.png" /><span class="s1">Lana Steiner</span> <span class="s1">Head of HR</span></div>',
+                    },
+                    'Olivia Rhye', ''
+                ],
+                [
+                    {
+                        'v': 'Demi Wilkinson',
+                        'f': '<div class="org-wrap"><img src="assets/images/org-4.png" /><span class="s1">Demi Wilkinson</span> <span class="s1">Head of Marketing</span></div>',
+                    },
+                    'Olivia Rhye', ''
+                ],
+                [
+                    {
+                        'v': 'Natalie Craig',
+                        'f': '<div class="org-wrap"><img src="assets/images/org-5.png" /><span class="s1">Natalie Craig</span> <span class="s1">Head of IT</span></div>',
+                    },
+                    'Olivia Rhye', ''
+                ]
+            ]);
+
+            // Create the chart.
+            var chart = new google.visualization.OrgChart(document.getElementById('chart_div'));
+            // Draw the chart, setting the allowHtml option to true for the tooltips.
+            chart.draw(data, { 'allowHtml': true });
+        }
+    </script>
+
+</body>
+
+</html>
